@@ -1,8 +1,5 @@
 package com.premier.petclinic.bootstrap;
 
-
-import com.premier.petclinic.services.Map.OwnerServiceMap;
-import com.premier.petclinic.services.Map.VetServiceMap;
 import com.premier.petclinic.model.Owner;
 import com.premier.petclinic.model.Vet;
 import com.premier.petclinic.services.OwnerService;
