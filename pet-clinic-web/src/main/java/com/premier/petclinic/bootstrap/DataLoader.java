@@ -1,8 +1,8 @@
 package com.premier.petclinic.bootstrap;
 
 
-import com.premier.petclinic.model.Map.OwnerServiceMap;
-import com.premier.petclinic.model.Map.VetServiceMap;
+import com.premier.petclinic.services.Map.OwnerServiceMap;
+import com.premier.petclinic.services.Map.VetServiceMap;
 import com.premier.petclinic.model.Owner;
 import com.premier.petclinic.model.Vet;
 import com.premier.petclinic.services.OwnerService;
@@ -16,9 +16,9 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override

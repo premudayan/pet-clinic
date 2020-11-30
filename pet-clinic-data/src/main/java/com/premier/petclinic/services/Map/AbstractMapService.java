@@ -1,9 +1,10 @@
-package com.premier.petclinic.model.Map;
+package com.premier.petclinic.services.Map;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+
 
 public abstract class AbstractMapService<T, ID> {
 
